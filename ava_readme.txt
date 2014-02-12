@@ -1,5 +1,5 @@
 Things that need to be merged:
 
-app.yaml
+app.yaml (needs debugging)
 manage.py
 settings.py
