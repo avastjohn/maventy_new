@@ -1,5 +1,5 @@
-from ragendja.settings_pre import *
-import unsaved_settings
+from ragendja.settings_pre import * # do we need ragendja
+import unsaved_settings # do we need this? how can we get it?
 
 MEDIA_VERSION = 1
 DJANGO_STYLE_MODEL_KIND = False

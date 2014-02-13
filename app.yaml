@@ -7,7 +7,7 @@
 # using cloud.google.com/console use the "project id" for your application
 # id.
 application: childdb
-version: 54
+version: 55
 runtime: python27
 api_version: 1
 threadsafe: yes
@@ -54,19 +54,19 @@ handlers:
 
 # TODO(dan): Should possibly use remote_api handler
 # See http://code.google.com/appengine/docs/python/config/appconfig.html#Builtin_Handlers
-- url: /remote-api-34358334
-  script: $PYTHON_LIB/google/appengine/ext/remote_api/handler.py
-  secure: optional
-  login: admin
+# - url: /remote-api-34358334
+#   script: $PYTHON_LIB/google/appengine/ext/remote_api/handler.py
+#   secure: optional
+#   login: admin
 
 - url: /static
   static_dir: static
   secure: optional
 
-- url: /.*
-  # script: common/appenginepatch/main.py
-  script: main.py
-  secure: optional
+# - url: /.*
+#   # script: common/appenginepatch/main.py
+#   script: main.py
+#   secure: optional
 
   #####################################################
 ################ From template ####################

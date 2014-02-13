@@ -219,7 +219,8 @@ class RegistrationProfile(db.Model):
     """
     ACTIVATED = u"ALREADY_ACTIVATED"
     
-    user = db.ReferenceProperty(User, verbose_name=_('user'))
+    #user = db.SelfReferenceProperty(User, verbose_name=_('user'))
+    user = db.SelfReferenceProperty(User)
     activation_key = db.StringProperty(_('activation key'))
     objects = RegistrationManager()
     

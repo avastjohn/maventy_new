@@ -6,9 +6,9 @@ try:
     from google.appengine.api.taskqueue import Task
 except:
     from google.appengine.api.labs.taskqueue import Task
-from ragendja.dbutils import get_filters, get_filtered, generate_key_name, \
-    to_json_data, transaction
-from ragendja.pyutils import getattr_by_path
+# from ragendja.dbutils import get_filters, get_filtered, generate_key_name, \
+#     to_json_data, transaction
+# from ragendja.pyutils import getattr_by_path
 from copy import copy, deepcopy
 import re
 import string
